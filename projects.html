@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Projects - Eman Fatima</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Eman <span>Fatima</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="index.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="projects.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="450"><a href="resume.html">Resume</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="index.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
+
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section>
+        <div class="projects-container">
+            <div class="projects-header" data-aos="fade-down" data-aos-duration="1500">
+                <h1>My <span>Projects</span></h1>
+                <p>Here are some of my recent projects and work</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <div class="project-image">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>  </h3>
+                        <p>A comprehensive tool for conducting security assessments and vulnerability analysis. Built with Python and includes automated scanning capabilities.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Nmap</span>
+                            <span>SQLite</span>
+                            <span>Flask</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#" class="project-link"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                    <div class="project-image">
+                        <i class="fa-solid fa-search"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Audio Forensics and Digital Tampering Detection</h3>
+                        <p>it is web Based Project it is use to secure the audio files and detect the digital tampering  using Ai models like whispher AiZ.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>whisper</span>
+                            <span>distilbert-base-uncased model</span>
+                            <span>java script</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#" class="project-link"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                    <div class="project-image">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Secure Web Application</h3>
+                        <p>A full-stack web application with advanced security features including authentication, encryption, and secure data handling.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+
+                            <span>JWT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#" class="project-link"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                    <div class="project-image">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Network Security Monitor</h3>
+                        <p>Real-time network monitoring system that detects anomalies, tracks traffic patterns, and alerts on potential security threats.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Snort</span>
+                            <span>ELK Stack</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#" class="project-link"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+                    <div class="project-image">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Password Security Manager</h3>
+                        <p>A secure password management system with encryption, multi-factor authentication, and secure sharing capabilities.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>AES Encryption</span>
+                            <span>SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#" class="project-link"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
+                    <div class="project-image">
+                        <i class="fa-solid fa-bug"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Penetration Testing Framework</h3>
+                        <p>Custom penetration testing framework with automated vulnerability scanning, exploit testing, and comprehensive reporting.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Metasploit</span>
+                            <span>Burp Suite</span>
+                            <span>Nmap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#" class="project-link"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Statistics -->
+            <div class="project-stats" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
+                <div class="stat-item">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>25+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>15+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-star"></i>
+                    <h3>4.9</h3>
+                    <p>Average Rating</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>2+</h3>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
