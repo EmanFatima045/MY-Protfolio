@@ -167,7 +167,7 @@ nav.scrolled{padding:13px 60px;box-shadow:0 4px 24px rgba(74,14,31,0.06)}
 .about-card p{font-size:12.5px;color:var(--dim)}
 
 .skills-layout{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.skill-box{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:24px 26px;transition:border-color 0.3s,transform 0.35s,box-shadow 0.35s}
+.skill-box{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:24px 26px;transition:border-color 0.3s,transform 0.35s,box-shadow 0.35s;position:relative;overflow:hidden}
 .skill-box:hover{border-color:var(--maroon3);transform:translateY(-5px);box-shadow:0 20px 40px -18px rgba(74,14,31,0.28)}
 .skill-box-head{display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .skill-box-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;background:rgba(74,14,31,0.08);color:var(--maroon2);transition:transform 0.35s}
@@ -178,14 +178,14 @@ nav.scrolled{padding:13px 60px;box-shadow:0 4px 24px rgba(74,14,31,0.06)}
 .tag:hover{background:var(--grad-main);border-color:var(--maroon2);color:#fff;transform:scale(1.08) translateY(-2px)}
 
 .certs-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
-.cert-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:19px 20px;display:flex;gap:14px;align-items:flex-start;transition:border-color 0.3s,transform 0.3s,box-shadow 0.3s}
+.cert-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:19px 20px;display:flex;gap:14px;align-items:flex-start;transition:border-color 0.3s,transform 0.3s,box-shadow 0.3s;position:relative;overflow:hidden}
 .cert-card:hover{border-color:var(--maroon3);transform:translateY(-4px);box-shadow:0 14px 30px -14px rgba(74,14,31,0.28)}
 .cert-ic{font-size:20px;color:var(--maroon2);flex-shrink:0;margin-top:2px}
 .cert-card h4{font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px}
 .cert-card p{font-size:11px;color:var(--muted);font-family:'Space Mono',monospace}
 
 .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.proj-card{background:var(--card);border:1px solid var(--border);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform 0.15s ease,border-color 0.3s,box-shadow 0.3s;transform-style:preserve-3d}
+.proj-card{background:var(--card);border:1px solid var(--border);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform 0.15s ease,border-color 0.3s,box-shadow 0.3s;transform-style:preserve-3d;position:relative}
 .proj-card:hover{border-color:var(--maroon3);box-shadow:0 28px 50px -20px rgba(74,14,31,0.32)}
 .proj-img{height:170px;position:relative;overflow:hidden;
   background:linear-gradient(150deg,#2b060d 0%,#4a0e1f 45%,#6b1329 100%);
@@ -254,13 +254,13 @@ nav.scrolled{padding:13px 60px;box-shadow:0 4px 24px rgba(74,14,31,0.06)}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 .contact-left h3{font-family:'Fraunces',serif;font-size:24px;font-weight:700;color:var(--text);margin-bottom:14px}
 .contact-left p{color:var(--dim);font-size:14px;line-height:1.85;margin-bottom:28px}
-.contact-item{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:17px 20px;margin-bottom:12px;transition:all 0.3s;text-decoration:none;color:var(--text)}
+.contact-item{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:17px 20px;margin-bottom:12px;transition:all 0.3s;text-decoration:none;color:var(--text);position:relative;overflow:hidden}
 .contact-item:hover{border-color:var(--maroon3);transform:translateX(6px);box-shadow:0 12px 26px -14px rgba(74,14,31,0.3)}
 .contact-item-icon{width:42px;height:42px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:17px;background:var(--grad-main);color:#fff;transition:transform 0.3s}
 .contact-item:hover .contact-item-icon{transform:scale(1.14) rotate(6deg)}
 .contact-item span{font-size:11px;color:var(--muted);display:block;margin-bottom:2px;font-family:'Space Mono',monospace}
 .contact-item strong{font-size:14px;color:var(--text)}
-.contact-form-box{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:32px}
+.contact-form-box{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:32px;position:relative;overflow:hidden}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
 .form-group{margin-bottom:14px}
 .form-group label{display:block;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
@@ -280,6 +280,31 @@ footer span.hl{color:var(--maroon2);font-weight:700}
 .reveal{opacity:0;transform:translateY(26px) scale(0.98);transition:opacity 0.7s cubic-bezier(0.16,1,0.3,1),transform 0.7s cubic-bezier(0.16,1,0.3,1)}
 .reveal.in{opacity:1;transform:translateY(0) scale(1)}
 .delay-1{transition-delay:0.08s}.delay-2{transition-delay:0.16s}.delay-3{transition-delay:0.24s}.delay-4{transition-delay:0.32s}.delay-5{transition-delay:0.4s}
+
+/* ---- Sparkle click animation (Skills / Projects / Contact) ---- */
+.sparkle-layer{position:fixed;left:0;top:0;width:0;height:0;pointer-events:none;z-index:9500}
+.sparkle-piece{
+  position:absolute; top:0; left:0; width:7px; height:7px; pointer-events:none;
+  background:var(--maroon2);
+  clip-path:polygon(50% 0%,63% 38%,100% 50%,63% 62%,50% 100%,37% 62%,0% 50%,37% 38%);
+  opacity:0; transform:translate(-50%,-50%) scale(0.3) rotate(0deg);
+  animation:sparklePop 0.85s cubic-bezier(0.16,1,0.3,1) forwards;
+}
+.sparkle-ring{
+  position:absolute; top:0; left:0; width:10px; height:10px; border-radius:50%;
+  border:1.5px solid var(--maroon2); pointer-events:none;
+  transform:translate(-50%,-50%) scale(0.2); opacity:0.8;
+  animation:sparkleRing 0.7s ease-out forwards;
+}
+@keyframes sparklePop{
+  0%{opacity:0; transform:translate(-50%,-50%) scale(0.2) rotate(0deg)}
+  18%{opacity:1}
+  100%{opacity:0; transform:translate(calc(-50% + var(--sx)),calc(-50% + var(--sy))) scale(var(--ss)) rotate(var(--sr))}
+}
+@keyframes sparkleRing{
+  0%{opacity:0.7; transform:translate(-50%,-50%) scale(0.2)}
+  100%{opacity:0; transform:translate(-50%,-50%) scale(3.4)}
+}
 
 @media(max-width:1024px){.projects-grid{grid-template-columns:repeat(2,1fr)}.proj-featured{grid-column:span 1}.about-grid{grid-template-columns:1fr}.lead-grid{grid-template-columns:1fr}}
 @media(max-width:768px){
@@ -407,10 +432,10 @@ footer span.hl{color:var(--maroon2);font-weight:700}
   <div class="particle-field" id="particleField"></div>
   <div class="hero-inner">
     <div class="hero-content">
-      <div class="badge reveal"><span class="badge-dot"></span> Open to Cybersecurity Roles</div>
+      <div class="badge reveal"><span class="badge-dot"></span> Open to Artificial Intelligence Roles</div>
       <h1 class="hero-title reveal delay-1">
         <span class="name">Eman Fatima</span>
-        <span class="role">Cybersecurity Specialist & Digital Forensics Analyst</span>
+        <span class="role">Artificial Intelligence Engineer & Cybersecurity Analyst</span>
       </h1>
       <p class="hero-desc reveal delay-2">
         BS graduate in <strong>Cybersecurity and Digital Forensics</strong> from The Islamia University of Bahawalpur (CGPA 3.50), with practical experience in <strong>threat detection, incident response, blockchain security</strong> and <strong>AI based anomaly detection</strong>. Published researcher at ICACNC 2025, former team leader, and IEEE event host with a record of turning security research into working systems.
@@ -845,6 +870,50 @@ for(let r=0;r<2;r++){
   marqWords.forEach(w => { mh += `<div class="marq-item"><i class="fa-solid fa-shield-halved"></i>${w}</div>`; });
 }
 track.innerHTML = mh;
+
+/* ---- Elegant sparkle burst on click, scoped to Skills / Projects / Contact ---- */
+(function(){
+  const sparkleZones = document.querySelectorAll('#skills, #projects, #contact');
+  const layer = document.createElement('div');
+  layer.className = 'sparkle-layer';
+  document.body.appendChild(layer);
+
+  function burst(x, y){
+    const ring = document.createElement('div');
+    ring.className = 'sparkle-ring';
+    ring.style.left = x + 'px';
+    ring.style.top = y + 'px';
+    layer.appendChild(ring);
+    ring.addEventListener('animationend', () => ring.remove());
+
+    const count = 8;
+    for(let i = 0; i < count; i++){
+      const piece = document.createElement('div');
+      piece.className = 'sparkle-piece';
+      const angle = (Math.PI * 2 * i) / count + (Math.random() * 0.4 - 0.2);
+      const dist = 26 + Math.random() * 30;
+      const sx = Math.cos(angle) * dist;
+      const sy = Math.sin(angle) * dist;
+      const scale = 0.6 + Math.random() * 0.8;
+      const rot = (Math.random() * 240 - 120) + 'deg';
+      piece.style.left = x + 'px';
+      piece.style.top = y + 'px';
+      piece.style.setProperty('--sx', sx + 'px');
+      piece.style.setProperty('--sy', sy + 'px');
+      piece.style.setProperty('--ss', scale);
+      piece.style.setProperty('--sr', rot);
+      piece.style.animationDelay = (Math.random() * 0.05) + 's';
+      layer.appendChild(piece);
+      piece.addEventListener('animationend', () => piece.remove());
+    }
+  }
+
+  sparkleZones.forEach(zone => {
+    zone.addEventListener('click', (e) => {
+      burst(e.clientX, e.clientY);
+    });
+  });
+})();
 </script>
 </body>
 </html>
