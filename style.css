@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;   /* ✅ FIXED */
+    background-color: black;
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span{
+    color: rgb(0,123,255);
+    text-shadow: 0 0 10px rgb(0,123,255);
+}
+
+.hamburg,
+.cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    display: none;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+}
+
+.nav-container .links {
+    display: flex;
+}
+
+.nav-container .links a{
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover{
+    color: rgb(0,123,255);
+    border-bottom: 2px solid rgb(0,123,255);
+}
+
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow: 0 0 20px black;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a:hover{
+    background-color: rgb(0,123,255);
+}
+
+/* ✅ FIXED SECTION */
+section{
+    width: 100%;
+    min-height: 90vh;
+    height: auto;
+}
+
+/* ===== MAIN ===== */
+.main-container{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-container .content{
+    color: white;
+    width: 40%;
+    min-height: 100px;
+}
+
+.content h1{
+    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+}
+
+.content h1 span{
+    font-weight: 700;
+    text-shadow: 0 0 10px rgb(0,123,255);
+    color: rgb(0,123,255);
+}
+
+.content .typewriter{
+    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+    font-weight: 700;
+}
+
+.typewriter span{
+    color: rgb(0,123,255);
+    text-shadow:  0 0 10px rgb(0,123,255);
+}
+
+.content p{
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    margin : 10px 0;
+}
+
+.social-links i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(0,123,255);
+    border-radius: 50%;
+    color: rgb(0,123,255);
+    margin: 0 15px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+}
+
+.social-links i:hover{
+    transform: scale(1.2);
+    background-color: rgb(0,123,255);
+    color: black;
+}
+
+.content button{
+    width: 50%;
+    height: 6vh;
+    margin: 30px;
+    background-color: rgb(0,123,255);
+    color: white;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.main-container .image{
+    width: 500px;
+    height: 80vh;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgb(0,123,255);
+}
+
+.main-container .image img{
+    width: 100%;
+}
+
+/* ===== PROJECTS FIXED ===== */
+.projects-container {
+    width: 100%;
+    min-height: 100%;
+    padding: 2rem;
+    overflow: visible;   /* ✅ FIX */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 123, 255, 0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    color: white;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 123, 255, 0.3);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:768px){
+    .main-container{
+        flex-direction: column;
+    }
+
+    .main-container .content{
+        width: 80%;
+    }
+
+    .projects-grid{
+        grid-template-columns: 1fr;
+    }
+}

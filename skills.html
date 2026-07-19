@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Skills - Eman Fatima</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Eman <span>Fatima</span>
+            </div>
+            <div class="links">
+
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="index.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="projects.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="450"><a href="resume.html">Resume</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
+
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <section>
+        <div class="skills-container">
+            <div class="skills-header" data-aos="fade-down" data-aos-duration="1500">
+                <h1>My <span>Skills</span></h1>
+                <p>Here are the technologies and tools I work with</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Technical Skills -->
+                <div class="skill-category" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                    <h2><i class="fa-solid fa-code"></i> Programming Languages</h2>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            
+                        </div>
+                        <div class="skill-item">
+                            <span>Java</span>
+                           
+                        </div>
+                        <div class="skill-item">
+                            <span>C++</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-category" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+                    <h2><i class="fa-solid fa-globe"></i> Web Development</h2>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>CSS</span>
+                            
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="skill-category" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">
+                    <h2><i class="fa-solid fa-shield-halved"></i> Cybersecurity</h2>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Ethical Hacking</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Digital Forensics</span>
+                            
+                        </div>
+                        <div class="skill-item">
+                            <span>Network Security</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="skill-category" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800">
+                    <h2><i class="fa-solid fa-tools"></i> Tools & Technologies</h2>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Wireshark</span>
+                            
+                        </div>
+                        <div class="skill-item">
+                            <span>Nmap</span>
+                            
+                        </div>
+                        <div class="skill-item">
+                            <span>Autopsy</span>
+                            
+                        </div>
+                        <div class="skill-item">
+                            <span>Linux</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+                <h2><i class="fa-solid fa-certificate"></i> Certifications</h2>
+                <div class="cert-grid">
+                    <div class="cert-item">
+                        <i class="fa-solid fa-award"></i>
+                        <h3>Foundations of Cyber Security</h3>
+                        <p>Coursera</p>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fa-solid fa-award"></i>
+                        <h3>Play it Safe: Manage Security Risks</h3>
+                        <p>Coursera</p>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fa-solid fa-award"></i>
+                        <h3>Connect and Protect : Network Security Fundamentals</h3>
+                        <p>Coursera</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
